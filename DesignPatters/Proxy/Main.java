@@ -17,12 +17,12 @@ public class Main {
      private static long test(YouTubeManager downloader) {
         long startTime = System.currentTimeMillis();
 
-        // User behavior in our app:
+        // Comportamento do usuário no aplicativo:
         downloader.renderPopularVideos();
         downloader.renderVideoPage("catzzzzzzzzz");
         downloader.renderPopularVideos();
         downloader.renderVideoPage("dancesvideoo");
-        // Users might visit the same page quite often.
+        // Os usuários podem visitar a mesma página com bastante frequência.
         downloader.renderVideoPage("catzzzzzzzzz");
         downloader.renderVideoPage("someothervid");
 

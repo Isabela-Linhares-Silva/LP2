@@ -16,8 +16,7 @@ public class ThirdPartyYouTubeClass implements ThirdPartyYouTubeLib{
         return getSomeVideo(videoId);
     }
 
-    // -----------------------------------------------------------------------
-    // Fake methods to simulate network activity. They as slow as a real life.
+   
 
     private int random(int min, int max) {
         return min + (int) (Math.random() * ((max - min) + 1));
