@@ -30,10 +30,10 @@ public class CachedYouTubeClass implements ThirdPartyYouTubeLib {
     public Video getVideo(String videoId) {
         Video video = cacheAll.get(videoId);
         if (video == null) {
-            video = youtubeService.getVideo(videoId);
-            cacheAll.put(videoId, video);
+            video = youtubeService.getVideo(videoId);// chama o real
+            cacheAll.put(videoId, video);// salva no cache
         } else {
-            System.out.println("Retrieved video '" + videoId + "' from cache.");
+            System.out.println("Retrieved video '" + videoId + "' from cache.");// retorna do cache
         }
         return video;
     }

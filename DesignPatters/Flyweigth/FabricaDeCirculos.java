@@ -3,7 +3,7 @@ package DesignPatters.Flyweigth;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FabricaDeCirculos {
+public class FabricaDeCirculos {// flyweight
     private Map<String, Circulo> circulos = new HashMap<>();
 
     public Circulo getCirculo(String cor){
